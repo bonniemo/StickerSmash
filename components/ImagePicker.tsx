@@ -22,6 +22,6 @@ export default function ImagePickerComponent({ onImageSelected }: Props) {
   };
 
   return (
-    <Button theme="primary" label="Choose a photo" onPress={pickImageAsync} />
+    <Button variant="withIcon" label="Choose a photo" onPress={pickImageAsync} />
   );
 }

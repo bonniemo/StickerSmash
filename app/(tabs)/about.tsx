@@ -1,21 +1,11 @@
-import { StyleSheet, Text, View } from "react-native";
+import { layoutStyles } from "@/styles/layoutStyles";
+import { textColor } from "@/styles/textStyles";
+import { Text, View } from "react-native";
 
 export default function About() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>About screen</Text>
+    <View style={layoutStyles.container}>
+      <Text style={textColor.white}>About screen</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#25292e",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  text: {
-    color: "#fff",
-  },
-});
